@@ -36,7 +36,7 @@ a{
 
  img{
 
-    width: 50%; 
+    width: 100%; 
 }
 
 li.nav-item:first-child:after{
@@ -58,6 +58,31 @@ li.nav-item:hover::after{
 .navbar-toggler-icon{
     padding: 20px ;
 }
+
+.container-img{
+ 
+   width: 20%;
+   min-width: 200px; 
+}
+
+@media screen and (max-width:767px) {
+    li.nav-item:first-child:after{
+        content:"";
+       
+            border-bottom:0;
+            color: unset;
+            
+        }
+        
+        li.nav-item:hover::after{
+            content:"";
+            border-bottom:0;
+            color: unset;
+               
+        }   
+}
+
+
     
 
 

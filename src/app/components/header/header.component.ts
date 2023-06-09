@@ -10,7 +10,7 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class HeaderComponent {
   title = 'tutoriasItsa';
-  data=""
+ 
   public showNavbar=true
   public rutas:string[]=['/login','/registro']
 

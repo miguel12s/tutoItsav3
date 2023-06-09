@@ -9,9 +9,10 @@
 }
 
 .container{
-    background: #fff;  /* fallback for old browsers */
     
     width: 1000px;
+  
+    
     margin-top: 20px;
     height: 500px;
     background: #fff;
@@ -64,3 +65,28 @@ label{
 input,select{
     border-color: #0d6efd;
 }
+
+@media screen and (max-width:400px) {
+    .container{
+      margin: 0;
+    height: 100%;
+    }
+    .container-main{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .container{
+        margin-bottom: 20px;
+      height: 100%;
+      }
+      .container-main{
+          height: 100%;
+          width: 100%;
+      }
+}
+
+
