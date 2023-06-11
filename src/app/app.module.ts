@@ -9,12 +9,16 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { RegistroComponent } from './components/pages/registro/registro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistroComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeroComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
