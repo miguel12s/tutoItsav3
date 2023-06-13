@@ -16,14 +16,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 
 }
 
-
+.list{
+    display: flex;
+    flex-direction: column ;
+   align-items: center;
+   justify-content: center;
+}
 
 .container-services{
  padding: 40px;
+ font-family: 'Poppins',sans-serif;
+}
+ul.list{
+    list-style: none;
+
+    
 }
 
+.estudiante,.docente{
+color: #000;
+    border-radius: 20px;
+    opacity: 0.9;
 
+}
+.col-sm-12{
+    margin-bottom: 24px;
+}
+
+li{
+    text-align: start;
+    color: #000;
+}
+
+@media screen and (max-width:400px) {
+    .list{
+        align-items: start;
+    }
+}
+
+@media screen and (min-width:400px ) and (max-width:800px) {
+    .list{
+        align-items: start;
+    }
+}
 

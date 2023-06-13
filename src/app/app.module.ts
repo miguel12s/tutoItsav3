@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
     RegistroComponent,
     HeaderComponent,
     HeroComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
