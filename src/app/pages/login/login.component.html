@@ -1,6 +1,6 @@
 
 <div class="container-form">
-    <form class="form" [formGroup]="contactForm" autocomplete="off" (ngSubmit)="onSubmit()" >
+    <form class="form"    [formGroup]="contactForm"  (ngSubmit)="onSubmit(contactForm.value)" >
         <div class="container-img">
         <img src="https://www.unibarranquilla.edu.co/images/logo.png" alt="logo unibarranquilla" class="img-fluid">
     </div>

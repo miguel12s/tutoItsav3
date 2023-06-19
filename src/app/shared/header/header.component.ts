@@ -42,4 +42,8 @@ alert('hola')
 
   }
 
+  redirectEstudiante(){
+    this.router.navigate(['estudiante/horario/'])
+  }
+
 }
