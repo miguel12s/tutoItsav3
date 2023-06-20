@@ -11,10 +11,10 @@ const routes: Routes = [
     component: PagesComponent,
     
     children: [
-      {path:'',redirectTo:'welcome',pathMatch:'full'},
-      {path:'welcome',component:WelcomeComponent},
-      { path: 'registro', component: RegistroComponent },
-      { path: 'login', component: LoginComponent },
+      
+      {path:'inicio',loadComponent: () => import('./welcome/welcome.module').then(m => m.WelcomeModule)},
+      
+      {path:'**',redirectTo:'',pathMatch:'full'}
     ],
   },
 ];

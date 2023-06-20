@@ -10,48 +10,38 @@
             <div class="col-md-4 mt-2">
                 <div class="form-group">
                     <label for="nombre">Nombres</label>
-                    <input required class="form-control" formControlName="nombres" [ngClass]="{
-              'is-invalid': submitted && contactForm.get('nombres')?.errors
-            }" type="text" name="nombre" id="nombre"  />
+                    <input required class="form-control" formControlName="nombres"  type="text" name="nombre" id="nombre"  [ngClass]="{'is-invalid':submitted && contactForm.get('nombres')?.errors} " />
                 </div>
                 <span class="text-danger" *ngIf="submitted && contactForm.get('nombres')?.errors">no ha cumplido el
                     minimo de caracteres</span>
 
                 <div class="form-group">
                     <label for="apellido">Apellidos</label>
-                    <input class="form-control" type="text" name="apellido" id="apellido" formControlName="apellidos"
-                        [ngClass]="{
-              'is-invalid': submitted && contactForm.get('apellidos')?.errors
-            }" required />
+                    <input class="form-control" type="text" name="apellido" id="apellido" formControlName="apellidos"  [ngClass]="{'is-invalid':submitted && contactForm.get('apellidos')?.errors} "
+                        required />
                 </div>
                 <span class="text-danger" *ngIf="submitted && contactForm.get('apellidos')?.errors">no ha cumplido el
                     minimo de caracteres</span>
 
                 <div class="form-group">
                     <label for="tipo">Tipo de documento</label>
-                    <select name="tipo" formControlName="tipoDocumento" id="tipo" class="form-control" [ngClass]="{
-              'is-invalid':
-                submitted && contactForm.get('tipoDocumento')?.errors
-            }">
-                        <option selected>Tarjeta de identidad</option>
+                    <select name="tipo" formControlName="tipoDocumento" id="tipo" class="form-control" [ngClass]="{'is-invalid':submitted && contactForm.get('tipo')?.errors} " >
+                        <option selected value="">Tarjeta de identidad</option>
                         <option>Cedula de ciudadania</option>
                     </select>
-                    <span class="text-danger" *ngIf="submitted && contactForm.get('tipoDocumento')?.errors">no ha
-                        cumplido el minimo de caracteres</span>
+                   
                 </div>
                 <div class="form-group">
                     <label for="contraseña">Contraseña</label>
-                    <input class="form-control" type="text" name="contraseña" id="contraseña" #password
-                        formControlName="contraseña" [ngClass]="{
-              'is-invalid': submitted && contactForm.get('contraseña')?.errors
-            }" required />
+                    <input class="form-control" type="text" name="contraseña" id="contraseña" 
+                        formControlName="contraseña"  [ngClass]="{'is-invalid':submitted && contactForm.get('contraseña')?.errors} "  required />
                 </div>
             </div>
             <div class="col-md-4 mt-2">
                 <div class="form-group">
                     <label for="programa">Programa perteneciente</label>
-                    <select formControlName="programa" name="programa" id="programa" class="form-control">
-                        <option value="">
+                    <select  formControlName="programa" name="programa" id="programa" class="form-control"  >
+                        <option selected value="">
                             tecnico profesional en mantenimiento en sistemas informaticos
                         </option>
                     </select>
@@ -59,11 +49,9 @@
 
                 <div class="form-group">
                     <label for="telefono">Numero de telefono</label>
-                    <input class="form-control" type="number" name="numero" formControlName="numeroTelefono" id="numero"
-                        [ngClass]="{
-              'is-invalid':
-                submitted && contactForm.get('numeroTelefono')?.errors
-            }" required />
+                    <input class="form-control" type="number" name="numeroTelefono" formControlName="numeroTelefono" 
+                    [ngClass]="{'is-invalid':submitted && contactForm.get('numeroTelefono')?.errors} " id="numeroTelefono"  
+                      required />
                 </div>
 
                 <span class="text-danger"
@@ -72,10 +60,8 @@
 
                 <div class="form-group">
                     <label for="correo">Correo</label>
-                    <input class="form-control" type="email" name="correo" id="correo" formControlName="correo"
-                        (input)="validarCorreo()" [ngClass]="{
-              'is-invalid': submitted && contactForm.get('correo')?.errors
-            }" pattern="[a-zA-Z0-9._%+-]+@unibarranquilla\.edu\.co" required />
+                    <input class="form-control" type="email" name="correo" id="correo" formControlName="correo"  [ngClass]="{'is-invalid':submitted && contactForm.get('correo')?.errors} "
+                        (input)="validarCorreo()"   required />
                 </div>
                 <span class="text-danger" *ngIf="submitted && contactForm.get('correo')?.errors">debe terminar
                     @unibarranquilla.edu.co</span>
@@ -83,13 +69,10 @@
                 <div class="form-group">
                     <label for="contraseña">Confirmar Contraseña</label>
                     <input class="form-control" type="text" name="contraseña" id="contraseña" #newPassword
-                        formControlName="nuevaContraseña" [ngClass]="{
-              'is-invalid':
-                submitted && contactForm.get('nuevaContraseña')?.errors
-            }" required />
+                        formControlName="nuevaContraseña"  [ngClass]="{'is-invalid':submitted && contactForm.get('nuevaContraseña')?.errors} " required />
                 </div>
                 <div class="form-group" style="display: flex; flex-direction: row">
-                    <input required type="checkbox" name="politica" formControlName="politica" />
+                    <input required type="checkbox" name="politica" formControlName="politica"  [ngClass]="{'is-invalid':submitted && contactForm.get('politica')?.errors} " />
                     <a target="_blank"
                         href="https://www.sic.gov.co/sites/default/files/documentos/072020/Pol%C3%ADtica%20de%20Tratamiento%20de%20Datos%20Personales%20-%20SIC.pdf">Estoy
                         de acuerdo con la politica de tratamiento de datos</a>

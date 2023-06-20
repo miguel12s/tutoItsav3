@@ -35,21 +35,19 @@ export class RegistroComponent  implements OnInit{
       tipoDocumento: [ '',Validators.required],
       contraseña: ['', [Validators.required, Validators.minLength(7)]],
       programa: ['', Validators.required],
-      numeroTelefono: ['', [Validators.required, Validators.minLength(2)]],
+      numeroTelefono: ['', Validators.required,],
       correo: ['', Validators.email], 
       nuevaContraseña: ['', [Validators.required, Validators.minLength(7)]],
       politica:['',Validators.requiredTrue]
     })
   }
   onSubmit(event:Event) {
-   
     this.submitted=true
-    if(this.contactForm.value.get('politica')==false)
-    
-    return 
+
+   
     if (this.contactForm.invalid) {
      console.log('formulario valido');
-     console.log(this.contactForm.value);
+     
 
      return
       

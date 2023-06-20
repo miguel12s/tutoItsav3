@@ -10,7 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [PerfilComponent, HorarioComponent, EstudianteComponent],
   imports: [
-    CommonModule, EstudianteRouting,SharedModule
+    CommonModule, EstudianteRouting,SharedModule 
   
   
   ]
