@@ -13,6 +13,9 @@ MIT
 @angular/router
 MIT
 
+@syncfusion/ej2-material-theme
+SEE LICENSE IN license
+
 bootstrap
 MIT
 The MIT License (MIT)
