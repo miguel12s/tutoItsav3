@@ -28,7 +28,7 @@
       >
         <ul class="navbar-nav gap-1 ">
           <li class="nav-item">
-            <a  class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a  class="nav-link active" aria-current="page" href="#hero">Inicio</a>
           </li>
           <li class="nav-item">
             <a  class="nav-link active" href="#servicios">Servicios</a>
@@ -37,13 +37,13 @@
             <a class="nav-link active" href="#contact">Contactanos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/estudiante/perfil']">Estudiante</a>
+            <a class="nav-link active" routerLink="/estudiante">Estudiante</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-center" target="_blank" rel="noopener noreferrer" routerLink="/login" >Inicia Sesion</a>
+            <a class="nav-link active text-center" target="_blank" rel="noopener noreferrer" routerLink="/auth/login" >Inicia Sesion</a>
           </li>
           <li >
-            <a  class="  btn btn-warning text-center" target="_blank" rel="noopener noreferrer" routerLink="/registro">Registrate</a>
+            <a  class="  btn btn-warning text-center" target="_blank" rel="noopener noreferrer" routerLink="/auth/registro">Registrate</a>
           </li>
         </ul>
       </div>

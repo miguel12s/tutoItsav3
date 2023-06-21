@@ -15,19 +15,13 @@ import { PagesModule } from './pages/pages.module';
 @NgModule({
   declarations: [
     AppComponent,
-  
-    
-
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule,FormsModule,PagesModule
-
-
+    SharedModule,
+    FormsModule,
   ],
   exports:[],
   providers: [ApiService, NavbarServices],

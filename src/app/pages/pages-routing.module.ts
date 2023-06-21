@@ -9,12 +9,19 @@ const routes: Routes = [
   {
     path: '',
     component: PagesComponent,
-    
+
     children: [
-      
-      {path:'inicio',loadComponent: () => import('./welcome/welcome.module').then(m => m.WelcomeModule)},
-      
-      {path:'**',redirectTo:'',pathMatch:'full'}
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('./login/login.module').then((m) => m.LoginModule),
+      },
+      {
+        path: 'registro',
+        loadChildren: () =>
+          import('./registro/registro.module').then((m) => m.RegistroModule),
+      },
+      { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
   },
 ];

@@ -6,13 +6,19 @@ import { EstudianteRouting } from './estudiante-routing.module';
 import { EstudianteComponent } from './estudiante.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SharedModule } from '../shared/shared.module';
+import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [PerfilComponent, HorarioComponent, EstudianteComponent],
+  declarations: [ 
+    HorarioComponent, 
+    PerfilComponent,
+    EstudianteComponent
+  ],
   imports: [
-    CommonModule, EstudianteRouting,SharedModule 
-  
-  
+    CommonModule,
+    EstudianteRouting,
+    
+  SharedModule
   ]
 })
 export class EstudianteModule { }

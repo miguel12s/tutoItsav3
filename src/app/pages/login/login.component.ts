@@ -38,7 +38,7 @@ console.log(form);
     return 
   }
   if(email==form.email && password==form.password ){
-    this.router.navigate(['estudiante/perfil'])
+    this.router.navigate(['/estudiante'])
   }
   
 
